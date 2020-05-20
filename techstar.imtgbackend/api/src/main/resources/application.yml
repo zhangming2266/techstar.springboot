@@ -1,0 +1,16 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /imtg
+
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: shanxigis
+    password: 123456
+
+# MyBatis
+mybatis:
+  type-aliases-package: com.techstar.imtgbackend.comm.domain
+  mapper-locations: classpath:/mybatis/*.xml
